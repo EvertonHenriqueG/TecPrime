@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+.services {
+  display: grid;
+  gap: 1.5rem;
+}
+.service {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.contact {
+  margin-top: 2rem;
+  text-align: center;
+}
+.contact a {
+  background-color: #10b981;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.contact a:hover {
+  background-color: #059669;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: #555;
+}
