@@ -46,6 +46,54 @@
     <div class="card">🛠️ <b>Suporte Técnico</b> — Atendimento presencial ou remoto para resolver problemas.</div>
   </section>
 
+  <!-- FORMULÁRIO DE SERVIÇOS -->
+<section id="agendamento">
+  <h2>Solicitar um serviço</h2>
+  <form id="form-servico" class="form-servico">
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+    <label for="telefone">Telefone/WhatsApp:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+    <label for="servico">Escolha o serviço:</label>
+    <select id="servico" name="servico" required>
+      <option value="">-- Selecione --</option>
+      <option value="Manutenção e Limpeza">🔧 Manutenção e Limpeza</option>
+      <option value="Montagem de Computadores">💻 Montagem de Computadores</option>
+      <option value="Landing Page">🌐 Landing Page</option>
+      <option value="Suporte Técnico">🛠️ Suporte Técnico</option>
+    </select>
+
+    <label for="detalhes">Detalhes do serviço:</label>
+    <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva seu problema ou necessidade"></textarea>
+
+    <button type="submit" class="btn">📲 Enviar no WhatsApp</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("form-servico").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let telefone = document.getElementById("telefone").value;
+    let servico = document.getElementById("servico").value;
+    let detalhes = document.getElementById("detalhes").value;
+
+    let numeroWhatsApp = "5581989423690"; // seu número com DDI e DDD
+    let mensagem = `Olá, meu nome é *${nome}*.
+    📱 Telefone: ${telefone}
+    📌 Serviço desejado: ${servico}
+    📝 Detalhes: ${detalhes}`;
+
+    let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+  });
+</script>
+
+
   <!-- RODAPÉ -->
   <footer id="contato">
     <h2>Entre em contato</h2>
