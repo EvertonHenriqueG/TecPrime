@@ -1,109 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>TecPrime - Soluções em TI</title>
+  <meta name="description" content="TecPrime: manutenção e limpeza de PCs, montagem, suporte técnico e criação de landing pages modernas e responsivas." />
+
+  <meta name="theme-color" content="#1e293b">
+
+  <meta property="og:title" content="TecPrime - Soluções em TI">
+  <meta property="og:description" content="Manutenção, suporte técnico e landing pages modernas.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
+
+<header id="inicio">
+  <nav class="navbar">
+    <div class="container nav-inner">
       <h1 class="logo">TecPrime</h1>
-      <ul>
+
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+
+      <ul class="nav-links">
         <li><a href="#sobre">Quem somos</a></li>
+        <li><a href="#porque">Por que escolher</a></li>
         <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#agendamento">Solicitar serviço</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
-    </nav>
-
-    <!-- HERO -->
-    <div class="hero">
-      <h2 class="hero-title">Soluções em TI para você e sua empresa</h2>
-      <p>Landing Pages modernas e manutenção profissional de computadores</p>
-      <a href="https://wa.me/5581989423690" target="_blank" class="btn">📲 Fale no WhatsApp</a>
     </div>
-  </header>
+  </nav>
 
-  <!-- SOBRE -->
-  <section id="sobre">
+  <section class="hero">
+    <div class="container hero-content">
+      <h2 class="hero-title">Soluções em TI para você e sua empresa</h2>
+      <p class="hero-subtitle">Landing pages modernas e manutenção profissional de computadores</p>
+
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/5581989423690" target="_blank">📲 Quero um orçamento</a>
+        <a class="btn btn-outline btn-secondary" href="#servicos">👀 Ver serviços</a>
+      </div>
+
+      <div class="hero-badges">
+        <span class="badge">⚡ Atendimento rápido</span>
+        <span class="badge">✅ Qualidade e confiança</span>
+        <span class="badge">🌍 Presencial e online</span>
+      </div>
+    </div>
+  </section>
+</header>
+
+<section id="sobre" class="section">
+  <div class="container">
     <h2>Quem somos</h2>
     <p>
-      Olá! Sou Everton, técnico em informática e desenvolvedor de landing pages. 
-      Transformo ideias em soluções digitais e ofereço serviços técnicos de qualidade 
-      para manter seu computador em perfeito funcionamento.
+      Sou Everton, técnico em informática e desenvolvedor de landing pages.
+      Ofereço soluções digitais e serviços técnicos com foco em qualidade,
+      transparência e resultado real.
     </p>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="card">🔧 <b>Manutenção e Limpeza</b> — Limpeza interna, remoção de vírus, formatação e otimização.</div>
-    <div class="card">💻 <b>Montagem de Computadores</b> — Montagem profissional com análise de compatibilidade.</div>
-    <div class="card">🌐 <b>Landing Pages</b> — Sites modernos, rápidos e responsivos para negócios.</div>
-    <div class="card">🛠️ <b>Suporte Técnico</b> — Atendimento presencial ou remoto para resolver problemas.</div>
-  </section>
-
-  <!-- FORMULÁRIO DE SERVIÇOS -->
-<section id="agendamento">
-  <h2>Solicitar um serviço</h2>
-  <form id="form-servico" class="form-servico">
-    
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-
-    <label for="telefone">Telefone/WhatsApp:</label>
-    <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
-
-    <label for="servico">Escolha o serviço:</label>
-    <select id="servico" name="servico" required>
-      <option value="">-- Selecione --</option>
-      <option value="Manutenção e Limpeza">🔧 Manutenção e Limpeza</option>
-      <option value="Montagem de Computadores">💻 Montagem de Computadores</option>
-      <option value="Landing Page">🌐 Landing Page</option>
-      <option value="Suporte Técnico">🛠️ Suporte Técnico</option>
-    </select>
-
-    <label for="detalhes">Detalhes do serviço:</label>
-    <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva seu problema ou necessidade"></textarea>
-
-    <button type="submit" class="btn">📲 Enviar no WhatsApp</button>
-  </form>
+  </div>
 </section>
 
-<script>
-  document.getElementById("form-servico").addEventListener("submit", function(e) {
-    e.preventDefault();
+<section id="porque" class="section section-alt">
+  <div class="container">
+    <h2>Por que escolher a TecPrime?</h2>
+    <p class="section-subtitle">
+      Atendimento transparente, serviço bem feito e foco total em resolver seu problema.
+    </p>
 
-    let nome = document.getElementById("nome").value;
-    let telefone = document.getElementById("telefone").value;
-    let servico = document.getElementById("servico").value;
-    let detalhes = document.getElementById("detalhes").value;
+    <div class="cards-grid why-grid">
+      <div class="card"><b>✅ Serviço responsável</b><p>Sem gambiarras, do diagnóstico à entrega.</p></div>
+      <div class="card"><b>⚡ Agilidade</b><p>Você acompanha tudo com clareza.</p></div>
+      <div class="card"><b>🔍 Diagnóstico claro</b><p>Explicação simples e objetiva.</p></div>
+      <div class="card"><b>🧩 Qualidade técnica</b><p>Compatibilidade e performance.</p></div>
+      <div class="card"><b>🌐 Sites que vendem</b><p>Foco em conversão e WhatsApp.</p></div>
+      <div class="card"><b>🛡️ Segurança</b><p>Backup, antivírus e boas práticas.</p></div>
+    </div>
+  </div>
+</section>
 
-    let numeroWhatsApp = "5581989423690"; // seu número com DDI e DDD
-    let mensagem = `Olá, meu nome é *${nome}*.
-    📱 Telefone: ${telefone}
-    📌 Serviço desejado: ${servico}
-    📝 Detalhes: ${detalhes}`;
+<section id="servicos" class="section">
+  <div class="container">
+    <h2>Serviços</h2>
 
-    let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, "_blank");
-  });
-</script>
+    <div class="cards-grid">
+      <div class="card">🔧 Manutenção e Limpeza</div>
+      <div class="card">💻 Montagem de Computadores</div>
+      <div class="card">🌐 Criação de Landing Pages</div>
+      <div class="card">🛠️ Suporte Técnico</div>
+    </div>
+  </div>
+</section>
 
+<section id="agendamento" class="section">
+  <div class="container">
+    <h2>Solicitar um serviço</h2>
 
+    <form id="form-servico" class="form-servico">
+      <input id="nome" placeholder="Seu nome" required>
+      <input id="telefone" placeholder="WhatsApp" required>
+      <select id="servico" required>
+        <option value="">Selecione</option>
+        <option>Manutenção</option>
+        <option>Montagem</option>
+        <option>Landing Page</option>
+        <option>Suporte</option>
+      </select>
+      <textarea id="detalhes" placeholder="Detalhes"></textarea>
+      <button class="btn">📲 Enviar no WhatsApp</button>
+    </form>
+  </div>
+</section>
 
-  <!-- RODAPÉ -->
-  <footer id="contato">
-    <h2>Entre em contato</h2>
-    <a href="https://wa.me/5581989423690" target="_blank" class="btn">📲 Falar no WhatsApp</a>
-    <p>Atendimento em Joaquim Nabuco - PE e online para todo o Brasil</p>
+<footer id="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <a class="btn" href="https://wa.me/5581989423690" target="_blank">📲 Falar no WhatsApp</a>
     <p>© 2025 TecPrime</p>
-  </footer>
+  </div>
+</footer>
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a href="https://wa.me/5581989423690" target="_blank" class="whatsapp-float">💬</a>
+<a class="whatsapp-float" href="https://wa.me/5581989423690">💬</a>
+
+<script src="script.js"></script>
 </body>
 </html>
