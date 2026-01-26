@@ -4,15 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>TecPrime - Soluções em TI</title>
-  <meta name="description" content="TecPrime: manutenção e limpeza de PCs, montagem, suporte técnico e criação de landing pages modernas e responsivas." />
+  <title>TecPrime | Manutenção de Computadores e Criação de Sites</title>
 
+  <meta name="description" content="Manutenção e limpeza de computadores, suporte técnico e criação de landing pages modernas. Atendimento rápido via WhatsApp.">
   <meta name="theme-color" content="#1e293b">
 
-  <meta property="og:title" content="TecPrime - Soluções em TI">
-  <meta property="og:description" content="Manutenção, suporte técnico e landing pages modernas.">
+  <link rel="canonical" href="https://www.tecprime.com.br">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TecPrime | Manutenção de Computadores e Criação de Sites">
+  <meta property="og:description" content="Manutenção, suporte técnico e criação de landing pages modernas com foco em conversão.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.tecprime.com.br">
+  <meta property="og:image" content="https://www.tecprime.com.br/imagem-og.jpg">
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -23,9 +28,9 @@
 <header id="inicio">
   <nav class="navbar">
     <div class="container nav-inner">
-      <h1 class="logo">TecPrime</h1>
+      <span class="logo">TecPrime</span>
 
-      <button class="menu-toggle" aria-expanded="false">☰</button>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">☰</button>
 
       <ul class="nav-links">
         <li><a href="#sobre">Quem somos</a></li>
@@ -39,12 +44,21 @@
 
   <section class="hero">
     <div class="container hero-content">
-      <h2 class="hero-title">Soluções em TI para você e sua empresa</h2>
-      <p class="hero-subtitle">Landing pages modernas e manutenção profissional de computadores</p>
+      <h1 class="hero-title">
+        Manutenção de Computadores e Criação de Landing Pages Profissionais
+      </h1>
+
+      <p class="hero-subtitle">
+        Soluções em TI para pessoas e empresas, com atendimento rápido e foco em resultado.
+      </p>
 
       <div class="hero-actions">
-        <a class="btn" href="https://wa.me/5581989423690" target="_blank">📲 Quero um orçamento</a>
-        <a class="btn btn-outline btn-secondary" href="#servicos">👀 Ver serviços</a>
+        <a class="btn" href="https://wa.me/5581989423690" target="_blank">
+          Orçamento de Manutenção e Sites no WhatsApp
+        </a>
+        <a class="btn btn-outline btn-secondary" href="#servicos">
+          Ver serviços
+        </a>
       </div>
 
       <div class="hero-badges">
@@ -61,8 +75,8 @@
     <h2>Quem somos</h2>
     <p>
       Sou Everton, técnico em informática e desenvolvedor de landing pages.
-      Ofereço soluções digitais e serviços técnicos com foco em qualidade,
-      transparência e resultado real.
+      Atendo clientes em <strong>Pernambuco</strong> e região, com serviços presenciais
+      e suporte remoto em todo o Brasil.
     </p>
   </div>
 </section>
@@ -75,25 +89,63 @@
     </p>
 
     <div class="cards-grid why-grid">
-      <div class="card"><b>✅ Serviço responsável</b><p>Sem gambiarras, do diagnóstico à entrega.</p></div>
-      <div class="card"><b>⚡ Agilidade</b><p>Você acompanha tudo com clareza.</p></div>
-      <div class="card"><b>🔍 Diagnóstico claro</b><p>Explicação simples e objetiva.</p></div>
-      <div class="card"><b>🧩 Qualidade técnica</b><p>Compatibilidade e performance.</p></div>
-      <div class="card"><b>🌐 Sites que vendem</b><p>Foco em conversão e WhatsApp.</p></div>
-      <div class="card"><b>🛡️ Segurança</b><p>Backup, antivírus e boas práticas.</p></div>
+      <div class="card">
+        <h3>Serviço responsável</h3>
+        <p>Sem gambiarras, do diagnóstico à entrega.</p>
+      </div>
+
+      <div class="card">
+        <h3>Agilidade no atendimento</h3>
+        <p>Você acompanha tudo com clareza.</p>
+      </div>
+
+      <div class="card">
+        <h3>Diagnóstico claro</h3>
+        <p>Explicação simples e objetiva.</p>
+      </div>
+
+      <div class="card">
+        <h3>Qualidade técnica</h3>
+        <p>Compatibilidade, desempenho e estabilidade.</p>
+      </div>
+
+      <div class="card">
+        <h3>Sites que vendem</h3>
+        <p>Landing pages focadas em conversão e WhatsApp.</p>
+      </div>
+
+      <div class="card">
+        <h3>Segurança digital</h3>
+        <p>Backup, antivírus e boas práticas.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="servicos" class="section">
   <div class="container">
-    <h2>Serviços</h2>
+    <h2>Serviços de TI</h2>
 
     <div class="cards-grid">
-      <div class="card">🔧 Manutenção e Limpeza</div>
-      <div class="card">💻 Montagem de Computadores</div>
-      <div class="card">🌐 Criação de Landing Pages</div>
-      <div class="card">🛠️ Suporte Técnico</div>
+      <div class="card">
+        <h3>Manutenção e Limpeza de Computadores</h3>
+        <p>Formatação, limpeza interna, troca de pasta térmica e otimização.</p>
+      </div>
+
+      <div class="card">
+        <h3>Montagem de Computadores</h3>
+        <p>Montagem personalizada para trabalho, estudos ou games.</p>
+      </div>
+
+      <div class="card">
+        <h3>Criação de Landing Pages</h3>
+        <p>Sites modernos, rápidos e otimizados para conversão.</p>
+      </div>
+
+      <div class="card">
+        <h3>Suporte Técnico</h3>
+        <p>Atendimento presencial e remoto para resolver seu problema.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -105,15 +157,20 @@
     <form id="form-servico" class="form-servico">
       <input id="nome" placeholder="Seu nome" required>
       <input id="telefone" placeholder="WhatsApp" required>
+
       <select id="servico" required>
-        <option value="">Selecione</option>
-        <option>Manutenção</option>
-        <option>Montagem</option>
-        <option>Landing Page</option>
-        <option>Suporte</option>
+        <option value="">Selecione o serviço</option>
+        <option>Manutenção de Computador</option>
+        <option>Montagem de PC</option>
+        <option>Criação de Landing Page</option>
+        <option>Suporte Técnico</option>
       </select>
-      <textarea id="detalhes" placeholder="Detalhes"></textarea>
-      <button class="btn">📲 Enviar no WhatsApp</button>
+
+      <textarea id="detalhes" placeholder="Descreva seu problema ou projeto"></textarea>
+
+      <button class="btn">
+        Enviar solicitação no WhatsApp
+      </button>
     </form>
   </div>
 </section>
@@ -121,13 +178,32 @@
 <footer id="contato">
   <div class="container">
     <h2>Contato</h2>
-    <a class="btn" href="https://wa.me/5581989423690" target="_blank">📲 Falar no WhatsApp</a>
+    <a class="btn" href="https://wa.me/5581989423690" target="_blank">
+      Falar no WhatsApp
+    </a>
     <p>© 2026 TecPrime</p>
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/5581989423690">💬</a>
+<a class="whatsapp-float" href="https://wa.me/5581989423690" aria-label="WhatsApp">💬</a>
 
 <script src="script.js"></script>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TecPrime",
+  "description": "Manutenção de computadores, suporte técnico e criação de landing pages.",
+  "url": "https://www.tecprime.com.br",
+  "telephone": "+55 81 98942-3690",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
 </body>
 </html>
